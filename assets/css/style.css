@@ -264,7 +264,8 @@ body {
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
-  align-items: center; /* 🔥 vertical alignment fix */
+  align-items: center;
+  /* 🔥 vertical alignment fix */
 
 }
 
@@ -492,3 +493,135 @@ body {
 #preloader.hide .preloaderInner {
   transform: scale(0.92);
 }
+
+
+@media (max-width: 425px) {
+  .goLiveBtn {
+    width: 200px !important;
+    font-size: 10px !important;
+  }
+
+  .goLiveBtn a {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .goLiveBtn {
+    width: 180px !important;
+    font-size: 10px !important;
+  }
+
+  .goLiveBtn a {
+    font-size: 10px !important;
+  }
+}
+
+.pricingTitle {
+  color: white;
+  font-size: 42px;
+}
+
+.pricingSubtitle {
+  color: #e0e0e0;
+  font-size: 18px;
+}
+
+/* CARD */
+
+.pricingCard {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: 0.3s;
+}
+
+.pricingCard:hover {
+  transform: translateY(-8px);
+}
+
+/* PLAN NAME */
+
+.planName {
+  font-size: 26px;
+  color: #6C0938;
+  margin-bottom: 10px;
+}
+
+/* PRICE */
+
+.price {
+  font-size: 40px;
+  color: #042B40;
+  margin-bottom: 20px;
+}
+
+/* FEATURES */
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.featureList li {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.featureList i {
+  color: #6C0938;
+  margin-right: 8px;
+}
+
+/* BUTTON */
+
+.pricingBtn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  background: #042B40;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricingBtn:hover {
+  background: #6C0938;
+}
+
+/* HIGHLIGHT BUTTON */
+
+.highlightBtn {
+  background: #6C0938;
+}
+
+.highlightBtn:hover {
+  background: #042B40;
+}
+
+/* POPULAR TAG */
+
+.popularTag {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #6C0938;
+  color: white;
+  padding: 5px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+  .pricingTitle {
+    font-size: 34px;
+  }
+}
+
